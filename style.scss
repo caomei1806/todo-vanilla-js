@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+
+* {
+	font-family: "Manrope";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navbar {
+	border-radius: 0 !important;
+	background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+	.navbar-brand {
+		color: white !important;
+	}
+}
+form {
+	.d-flex {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.todo {
+			height: 44px !important;
+		}
+		button {
+			background-color: #8a2387;
+			border: 0;
+			transition: all 0.3s ease;
+			margin-left: 1rem;
+			&:focus {
+				background-color: #8a2387;
+			}
+			&:hover {
+				background-color: #500d4e;
+			}
+		}
+	}
+	select {
+		background-color: #8a2387 !important;
+		color: white !important;
+		margin-top: 2rem;
+		width: 15rem !important;
+		border: 0;
+		option {
+			background-color: #ca3767 !important;
+			border: 0;
+		}
+	}
+}
+
+.todoDiv {
+	list-style-type: none !important;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(240, 240, 240);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: 4px;
+	transition: all 0.6s ease;
+	.btn {
+		border: 0;
+		margin-right: 1rem;
+		transition: all 0.3s ease;
+	}
+	.btn-info {
+		background-color: #f27121;
+		&:focus {
+			background-color: #f27121;
+		}
+		&:hover {
+			background-color: #c24a00;
+		}
+	}
+	li {
+		flex: 1;
+		padding: 6px 12px;
+	}
+}
+.fa-trash,
+.fa-check {
+	pointer-events: none;
+}
+.checked {
+	background-color: rgb(202, 202, 202);
+	text-decoration: line-through;
+	opacity: 0.6;
+	.btn-info {
+		transition: all 0.3s ease;
+		background-color: green;
+		&:focus {
+			background-color: green;
+		}
+		&:hover {
+			background-color: rgb(168, 168, 168);
+		}
+	}
+}
+.deleted {
+	opacity: 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	>
+	<link
+		rel="stylesheet"
+		href="/style.css"
+	>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+		crossorigin="anonymous"
+	/>
+	<!--Bootstrap-->
+	<link
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<title>TODO</title>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<span class="navbar-brand mb-0 h3">Todo by me</span>
+		</div>
+	</nav>
+	<div class="container">
+		<form
+			action=""
+			class="form-group"
+		>
+			<label for="todo">Tap todo here</label>
+			<div class="d-flex">
+				<input
+					type="text"
+					name="todo"
+					id="todo"
+					class="form-control todo"
+					placeholder=""
+					aria-describedby="helpId"
+				>
+				<button class="btn btn-primary btn-lg todo-add">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
+			<select
+				name="todos"
+				class="form-control form-control-sm filter"
+			>
+				<option value="all">All</option>
+				<option value="notCompleted">Not completed</option>
+				<option value="completed">Done</option>
+			</select>
+		</form>
+		<div>
+			<ul class="todo-list"></ul>
+		</div>
+	</div>
+	<script
+		src="app.js"
+		defer
+	></script>
+</body>
+
+</html>
